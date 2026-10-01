@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Vertical Film Company</title>
     <meta name="description" content="Vertical Film Company" />
-    <link rel="icon" href="logo.png" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <style>
+      @font-face {
+        font-family: "Libre Bodoni";
+        src: url("fonts/LibreBodoni.woff2") format("woff2");
+        font-weight: 400;
+        font-style: normal;
+        font-display: block;
+      }
+
       html,
       body {
         margin: 0;
@@ -22,14 +30,48 @@
         justify-content: center;
       }
 
-      img {
-        width: min(90vw, calc(74vh * 328 / 374));
-        height: auto;
+      .logo {
+        color: #fff;
+        text-align: center;
+        font-family: "Libre Bodoni", Didot, "Bodoni MT", serif;
+        font-weight: 400;
+        font-size: min(7.2vw, 8.4vh);
+      }
+
+      .mark,
+      .line {
         display: block;
+        margin: 0;
+      }
+
+      .mark {
+        font-size: 5.7em;
+        line-height: 0.68;
+      }
+
+      .line {
+        font-size: 1em;
+        line-height: 1;
+        letter-spacing: 0.22em;
+        padding-left: 0.22em;
+      }
+
+      .mark + .line {
+        margin-top: 0.55em;
+      }
+
+      .line + .line {
+        margin-top: 0.38em;
+        letter-spacing: 0.055em;
+        padding-left: 0.055em;
       }
     </style>
   </head>
   <body>
-    <img src="logo.png" alt="Vertical Film Company" />
+    <h1 class="logo">
+      <span class="mark">V</span>
+      <span class="line">VERTICAL</span>
+      <span class="line">FILM COMPANY</span>
+    </h1>
   </body>
 </html>
